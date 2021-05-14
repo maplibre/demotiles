@@ -67,6 +67,6 @@
         1
     ],
     "tiles": [
-        "https://api.maptiler.com/tiles/052e1c74-e4b7-4d4d-af2d-567c80f2c2c7/{z}/{x}/{y}.pbf?key=FgUcizTE7gigsuRcIdW4"
+        "https://demotiles.maplibre.org/tiles/{z}/{x}/{y}.pbf"
     ]
 }
