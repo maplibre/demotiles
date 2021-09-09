@@ -14,6 +14,8 @@ For offline use you can download the [.zip](https://github.com/maplibre/demotile
 
 Kindly provided by [MapTiler](https://www.maptiler.com/) team (@klokan, @nbozon, @petr-pokorny-1, @tomasklanica).
 
+The Open Sans Regular font PBFs were generated using the script and source fonts from https://github.com/openmaptiles/fonts.
+
 ![maplibre-world-map-style](https://user-images.githubusercontent.com/59284/118267966-117aa100-b4bd-11eb-8824-430cbe674191.png)
 
 ## World countries vector tiles
