@@ -6,11 +6,11 @@ Contains terrain tiles around Innsbruck.
 ## Terrain Tile Generation
 
 
-1.) This terrain was made from JAXA AW3D30 DSM files. To get these yourself, you must register for a free account at https://www.eorc.jaxa.jp/ALOS/en/dataset/aw3d30/aw3d30_e.htm , 
+1.) This terrain was made from JAXA AW3D30 DSM files. To get these yourself, you must register for a free account at https://www.eorc.jaxa.jp/ALOS/en/dataset/aw3d30/aw3d30_e.htm .
 
-2.) Once registered, go to the JAXA [download page](https://www.eorc.jaxa.jp/ALOS/en/aw3d30/data/index.htm) and get the ZIP files which match the region you would like to map
+2.) Once registered, go to the JAXA [download page](https://www.eorc.jaxa.jp/ALOS/en/aw3d30/data/index.htm) and get the ZIP files which match the region you would like to map.
 
-3.) From each zip file you downloaded, extract the file that ends in "_DSM.tif" and place it into a folder
+3.) From each zip file you downloaded, extract the file that ends in "_DSM.tif" and place it into a folder.
 
 4.) Run the following bash script. Make sure the INPUT_DIR directory is the folder where you placed the "_DSM.tif" files. This requires proj, gdal, and rio-rgbify to be installed.
 
@@ -36,7 +36,7 @@ Contains terrain tiles around Innsbruck.
 
 6.) Use a sqlite editor to add in attribution, name, description.  The attribution it important to comply with the JAXA [use policy](https://earth.jaxa.jp/policy/en.html) 
 
-7.) To make the mbtiles into flat files (optional), use a tool like mbutil to extract them
+7.) To make the mbtiles into flat files (optional), use a tool like mbutil to extract them.
 
     mb-util jaxa_terrainrgb_0-12.mbtiles terrainrgb
 
