@@ -34,7 +34,7 @@ Contains terrain tiles around Innsbruck.
 
 5.) You now should have a TerrainRGB mbtiles file in the OUTPUT_DIR of the script. 
 
-6.) Use a sqlite editor to add in attribution, name, description.  The attribution it important to comply with the JAXA [use policy](https://earth.jaxa.jp/policy/en.html) 
+6.) Use a sqlite editor to add in attribution, name, description.  The attribution is important to comply with the JAXA [use policy](https://earth.jaxa.jp/policy/en.html) 
 
 7.) To make the mbtiles into flat files (optional), use a tool like mbutil to extract them.
 
