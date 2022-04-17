@@ -1,0 +1,27 @@
+{
+    "tiles": [
+        "https://maplibre.org/demotiles/terrain-tiles/{z}/{x}/{y}.png"
+    ],
+    "name": "jaxa_terrainrgb_N047E011",
+    "format": "png",
+    "basename": "jaxa_terrainrgb_N047E011",
+    "id": "jaxa_terrainrgb_N047E011",
+    "description": "jaxa_terrainrgb_N047E011",
+    "version": "1",
+    "type": "baselayer",
+    "attribution": "<a href=\"https://earth.jaxa.jp/en/data/policy/\">AW3D30 (JAXA)</a>",
+    "minzoom": 0,
+    "maxzoom": 12,
+    "bounds": [
+        -180,
+        -85.05112877980659,
+        180,
+        85.0511287798066
+    ],
+    "center": [
+        0,
+        0,
+        6
+    ],
+    "tilejson": "2.0.0"
+}
