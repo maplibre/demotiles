@@ -1,7 +1,76 @@
 
+
 # Terrain Tiles
 
-Contains terrain tiles around Innsbruck.
+Contains terrain tiles in the N047E011 region. These tiles are made to be used with our terrain demo page, which centers around Innsbruck Austria [11.40416, 47.26475]
+
+## How to use the demo Terrain Tiles
+
+1.) Include the terrain tiles in your maps list of sources.
+
+    terrain: {
+    	type: 'raster-dem',
+    	url: 'https://demotiles.maplibre.org/terrain-tiles/tiles.json',
+    	tileSize: 256
+    },
+
+2.) Use the terrain tile source for 3d terrain in you style.
+
+    terrain: {
+    	source:  'terrain',
+    	exaggeration:  1
+    }
+
+3.) Use the terrain tile source for hillshade.
+
+    {
+    	id:  'hills',
+    	type:  'hillshade',
+    	source:  'terrain',
+    	layout: {'visibility':  'visible'},
+    	paint: {'hillshade-exaggeration':  0.33}
+    }
+  
+4.) With all of these combined, the style should look something like this.
+ 
+
+    style: {
+    	version:  8,
+    	sources: {
+    		osm: {
+				type:  'raster',
+				tiles: ['https://a.tile.openstreetmap.org/{z}/{x}/{y}.png'],
+				tileSize:  256,
+				attribution:  '&copy; OpenStreetMap Contributors',
+				maxzoom:  19
+			},
+    		terrain: {
+				type:  'raster-dem',
+				url:  'https://demotiles.maplibre.org/terrain-tiles/tiles.json',
+				tileSize:  256
+			},
+    	},
+    	layers: [
+    		{
+    			id:  'osm',
+    			type:  'raster',
+    			source:  'osm'
+    		},
+    		{
+    			id:  'hills',
+				type:  'hillshade',
+				source:  'terrain',
+				layout: {'visibility':  'visible'},
+				paint: {'hillshade-exaggeration':  0.33}
+			}
+		],
+		terrain: {
+			source:  'terrain',
+			exaggeration:  1
+		}
+    }
+
+5.) With all this in place, view it by going to Innsbruck, Austria [11.40416, 47.26475] on your map. These tiles only cover a 1 degree x 1 degree area, so they are only viewable in the N047E011 region.
 
 ## Terrain Tile Generation
 
