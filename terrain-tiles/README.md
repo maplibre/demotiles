@@ -8,7 +8,12 @@ Contains terrain tiles in the N047E011 region. These tiles are made to be used w
 
 1.) Include the terrain tiles in your maps list of sources.
 
-    terrain: {
+    terrain_source: {
+    	type: 'raster-dem',
+    	url: 'https://demotiles.maplibre.org/terrain-tiles/tiles.json',
+    	tileSize: 256
+    },
+    hillshade_source: {
     	type: 'raster-dem',
     	url: 'https://demotiles.maplibre.org/terrain-tiles/tiles.json',
     	tileSize: 256
@@ -17,7 +22,7 @@ Contains terrain tiles in the N047E011 region. These tiles are made to be used w
 2.) Use the terrain tile source for 3d terrain in you style.
 
     terrain: {
-    	source:  'terrain',
+    	source:  'terrain_source',
     	exaggeration:  1
     }
 
@@ -26,9 +31,9 @@ Contains terrain tiles in the N047E011 region. These tiles are made to be used w
     {
     	id:  'hills',
     	type:  'hillshade',
-    	source:  'terrain',
+    	source:  'hillshade_source',
     	layout: {'visibility':  'visible'},
-    	paint: {'hillshade-exaggeration':  0.33}
+    	paint: {'hillshade-shadow-color':'#473B24'}
     }
   
 4.) With all of these combined, the style should look something like this.
@@ -44,7 +49,12 @@ Contains terrain tiles in the N047E011 region. These tiles are made to be used w
 				attribution:  '&copy; OpenStreetMap Contributors',
 				maxzoom:  19
 			},
-    		terrain: {
+    		terrain_source: {
+				type:  'raster-dem',
+				url:  'https://demotiles.maplibre.org/terrain-tiles/tiles.json',
+				tileSize:  256
+			},
+    		hillshade_source: {
 				type:  'raster-dem',
 				url:  'https://demotiles.maplibre.org/terrain-tiles/tiles.json',
 				tileSize:  256
@@ -59,13 +69,13 @@ Contains terrain tiles in the N047E011 region. These tiles are made to be used w
     		{
     			id:  'hills',
 				type:  'hillshade',
-				source:  'terrain',
+				source:  'hillshade_source',
 				layout: {'visibility':  'visible'},
-				paint: {'hillshade-exaggeration':  0.33}
+				paint: {'hillshade-shadow-color':'#473B24'}
 			}
 		],
 		terrain: {
-			source:  'terrain',
+			source:  'terrain_source',
 			exaggeration:  1
 		}
     }
