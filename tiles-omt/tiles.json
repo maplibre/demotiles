@@ -1,6 +1,6 @@
 {
     "tiles": [
-        "https://github.com/wifidb/demotiles/tiles-omt/{z}/{x}/{y}.pbf"
+        "https://raw.githubusercontent.com/WifiDB/demotiles/gh-pages/tiles-omt/{z}/{x}/{y}.pbf"
     ],
     "name": "OpenMapTiles",
     "format": "pbf",
