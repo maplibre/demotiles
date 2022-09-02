@@ -1,3 +1,3 @@
 # Sample Sprites
 
-These sprites we generated using https://github.com/acalcutt/icon-fonts 
+These sprite files were generated using https://github.com/acalcutt/icon-fonts 
