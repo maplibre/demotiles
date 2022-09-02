@@ -27,7 +27,7 @@
       "url": "https://raw.githubusercontent.com/WifiDB/demotiles/gh-pages/tiles-omt/tiles.json"
     }
   },
-  "sprite": "https://raw.githubusercontent.com/WifiDB/demotiles/gh-pages/sprite",
+  "sprite": "https://raw.githubusercontent.com/WifiDB/demotiles/gh-pages/sprite/sprite",
   "glyphs": "https://raw.githubusercontent.com/WifiDB/demotiles/gh-pages/fonts/{fontstack}/{range}.pbf",
   "layers": [
     {
