@@ -24,11 +24,11 @@
   "sources": {
     "openmaptiles": {
       "type": "vector",
-      "url": "https://github.com/wifidb/demotiles/tiles-omt/tiles.json"
+      "url": "https://raw.githubusercontent.com/WifiDB/demotiles/gh-pages/tiles-omt/tiles.json"
     }
   },
-  "sprite": "https://github.com/wifidb/demotiles/sprite",
-  "glyphs": "https://github.com/wifidb/demotiles/fonts",
+  "sprite": "https://raw.githubusercontent.com/WifiDB/demotiles/gh-pages/sprite",
+  "glyphs": "https://raw.githubusercontent.com/WifiDB/demotiles/gh-pages/fonts/{fontstack}/{range}.pbf",
   "layers": [
     {
       "id": "background",
