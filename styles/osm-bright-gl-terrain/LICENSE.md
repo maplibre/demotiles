@@ -3,7 +3,7 @@ Copyright (c) 2016, KlokanTech.com & OpenMapTiles contributors.
 Copyright (c) 2014, Mapbox.  
 All rights reserved.
 
-Modification by MapLibre to add 3d buildings and housenumbers.
+Modification by MapLibre to add 3d buildings, housenumbers, hillshade, and terrain.
 Modifications by KlokanTech.com & OpenMapTiles contributors.  
 Derived from "Mapbox Open Styles" https://github.com/mapbox/mapbox-gl-styles
 
