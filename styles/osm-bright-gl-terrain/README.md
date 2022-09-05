@@ -1,7 +1,7 @@
-# OSM Bright
+# OSM Bright Terrain
 [![Build Status](https://travis-ci.org/openmaptiles/osm-bright-gl-style.svg?branch=master)](https://travis-ci.org/openmaptiles/osm-bright-gl-style)
 
-A Mapbox GL basemap style showcasing OpenStreetMap.
+A Mapbox GL basemap style showcasing OpenStreetMap layers with terrain added.
 It is using the vector tile
 schema of [OpenMapTiles](https://github.com/openmaptiles/openmaptiles).
 
