@@ -41,11 +41,11 @@
    "sources":{
       "openmaptiles":{
          "type":"vector",
-         "url":"https://raw.githubusercontent.com/WifiDB/demotiles/gh-pages/tiles-omt/tiles.json"
+         "url":"https://wifidb.github.io/demotiles/tiles-omt/tiles.json"
       }
    },
-   "sprite":"https://raw.githubusercontent.com/WifiDB/demotiles/gh-pages/sprite/sprite",
-   "glyphs":"https://raw.githubusercontent.com/WifiDB/demotiles/gh-pages/font/{fontstack}/{range}.pbf",
+   "sprite":"https://wifidb.github.io/demotiles/sprite/sprite",
+   "glyphs":"https://wifidb.github.io/demotiles/font/{fontstack}/{range}.pbf",
    "layers":[
       {
          "id":"background",
