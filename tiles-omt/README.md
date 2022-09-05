@@ -17,7 +17,7 @@ Contains OpenMapTiles in the N047E011 region. These tiles are made to be used wi
 
 ## OMT Tile Generation
 
-1.) Create OMT tiles using you favorite tool. In this example I use planetiler.
+1.) Create OMT mbtiles using you favorite tool. In this example I use planetiler.
 
 	java -Xmx45g -XX:OnOutOfMemoryError="kill -9 %p" -jar planetiler.jar --download --area=europe --fetch-wikidata --bounds=11,47,12,48 --mbtiles=N047E011.mbtiles 
 
