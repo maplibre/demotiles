@@ -735,6 +735,42 @@
       }
     },
     {
+         "id":"building-3d",
+         "type":"fill-extrusion",
+         "source":"openmaptiles",
+         "source-layer":"building",
+         "filter":[
+            "all",
+            [
+               "!has",
+               "hide_3d"
+            ]
+         ],
+         "paint":{
+            "fill-extrusion-base":{
+               "property":"render_min_height",
+               "type":"identity"
+            },
+            "fill-extrusion-color":[
+               "case",
+               [
+                  "has",
+                  "colour"
+               ],
+               [
+                  "get",
+                  "colour"
+               ],
+               "hsl(39, 41%, 86%)"
+            ],
+            "fill-extrusion-height":{
+               "property":"render_height",
+               "type":"identity"
+            },
+            "fill-extrusion-opacity":0.6
+         }
+    },
+    {
       "id": "tunnel-service-track-casing",
       "type": "line",
       "metadata": {
@@ -4184,6 +4220,28 @@
         "text-halo-color": "#ffffff"
       }
     },
+      {
+         "id":"housenumber",
+         "type":"symbol",
+         "source":"openmaptiles",
+         "source-layer":"housenumber",
+         "minzoom":17,
+         "filter":[
+            "==",
+            "$type",
+            "Point"
+         ],
+         "layout":{
+            "text-field":"{housenumber}",
+            "text-size":10,
+            "text-font":[
+               "Noto Sans Regular"
+            ]
+         },
+         "paint":{
+            "text-color":"rgba(212, 177, 146, 1)"
+         }
+      },
     {
       "id": "road_oneway",
       "type": "symbol",
