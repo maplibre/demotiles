@@ -25,7 +25,7 @@ Contains OpenMapTiles in the N047E011 region. These tiles are made to be used wi
 
 	./mb-util --image_format=pbf N047E011.mbtiles N047E011
 
-3.) Uncompress pbf files so they can be used with github pages.
+3.) Uncompress the pbf files so they can be used with github pages.
 
 	cd N047E011
 	gzip -d -r -S .pbf *
