@@ -1,6 +1,6 @@
 {
     "tiles": [
-        "https://wifidb.github.io/demotiles/terrain-tiles/{z}/{x}/{y}.png"
+        "https://demotiles.maplibre.org/terrain-tiles/{z}/{x}/{y}.png"
     ],
     "name": "jaxa_terrainrgb_N047E011",
     "format": "png",

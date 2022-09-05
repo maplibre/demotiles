@@ -21,7 +21,7 @@ var map = window.map = new maplibregl.Map({
     center: [11.39085, 47.27574],
     pitch: 52,
     hash: true,
-    style: 'https://wifidb.github.io/demotiles/styles/osm-bright-gl-style/style.json',
+    style: 'https://demotiles.maplibre.org/styles/osm-bright-gl-style/style.json',
     maxZoom: 18,
     maxPitch: 85
 });
@@ -36,7 +36,7 @@ map.on('load', () => {
 
     map.addSource('HillshadeSource', {
         type: 'raster-dem',
-        url: 'https://wifidb.github.io/demotiles/terrain-tiles/tiles.json',
+        url: 'https://demotiles.maplibre.org/terrain-tiles/tiles.json',
     });
 
     map.addLayer({
@@ -48,7 +48,7 @@ map.on('load', () => {
 	
     map.addSource('TerrainSource', {
         type: 'raster-dem',
-        url: 'https://wifidb.github.io/demotiles/terrain-tiles/tiles.json',
+        url: 'https://demotiles.maplibre.org/terrain-tiles/tiles.json',
     });
 
     map.setTerrain({source: 'TerrainSource', exaggeration: 1});

@@ -67,6 +67,6 @@
         1
     ],
     "tiles": [
-        "https://wifidb.github.io/demotiles/tiles/{z}/{x}/{y}.pbf"
+        "https://demotiles.maplibre.org/tiles/{z}/{x}/{y}.pbf"
     ]
 }

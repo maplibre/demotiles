@@ -41,11 +41,11 @@
    "sources":{
       "openmaptiles":{
          "type":"vector",
-         "url":"https://wifidb.github.io/demotiles/tiles-omt/tiles.json"
+         "url":"https://demotiles.maplibre.org/tiles-omt/tiles.json"
       }
    },
-   "sprite":"https://wifidb.github.io/demotiles/sprite/sprite",
-   "glyphs":"https://wifidb.github.io/demotiles/font/{fontstack}/{range}.pbf",
+   "sprite":"https://demotiles.maplibre.org/sprite/sprite",
+   "glyphs":"https://demotiles.maplibre.org/font/{fontstack}/{range}.pbf",
    "layers":[
       {
          "id":"background",
