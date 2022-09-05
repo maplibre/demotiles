@@ -1,6 +1,6 @@
 {
    "version":8,
-   "name":"OSM Bright",
+   "name":"OSM Bright Terrain",
    "metadata":{
       "mapbox:type":"template",
       "mapbox:groups":{
@@ -42,6 +42,14 @@
       "openmaptiles":{
          "type":"vector",
          "url":"https://wifidb.github.io/demotiles/tiles-omt/tiles.json"
+      },
+      "TerrainSource":{
+         "type": "raster-dem",
+         "url": "https://wifidb.github.io/demotiles/terrain-tiles/tiles.json",
+      },
+      "HillshadeSource":{
+         "type": "raster-dem",
+         "url": "https://wifidb.github.io/demotiles/terrain-tiles/tiles.json",
       }
    },
    "sprite":"https://wifidb.github.io/demotiles/sprite/sprite",
@@ -367,6 +375,13 @@
             "fill-color":"#d8e8c8",
             "fill-opacity":0.8
          }
+      },
+      {
+         "id":  "hillshade",
+         "type":  "hillshade:,
+         "source":  "HillshadeSource",
+         "layout": {"visibility": "visible"},
+         "paint": {"hillshade-shadow-color": "#473B24"}
       },
       {
          "id":"waterway_tunnel",
@@ -5202,5 +5217,9 @@
             "text-halo-color":"rgba(255,255,255,0.8)"
          }
       }
-   ]
+   ],
+   "terrain" {
+		"source":  "TerrainSource",
+		"exaggeration":  1
+	}
 }
