@@ -52,7 +52,7 @@
 			"url": "https://wifidb.github.io/demotiles/terrain-tiles/tiles.json"
 		}
 	},
-	"sprite": "https://wifidb.github.io/demotiles/sprite/sprite",
+	"sprite": "https://wifidb.github.io/demotiles/styles/osm-bright-gl-terrain/sprite",
 	"glyphs": "https://wifidb.github.io/demotiles/font/{fontstack}/{range}.pbf",
 	"layers": [{
 			"id": "background",
