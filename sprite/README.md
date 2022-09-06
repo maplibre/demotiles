@@ -1,3 +1,3 @@
 # Sample Sprites
 
-These sprite files were generated using https://github.com/acalcutt/icon-fonts 
+These sprite files are from https://github.com/openmaptiles/osm-bright-gl-style
