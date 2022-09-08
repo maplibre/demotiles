@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8' />
+    <title>MapLibre Demotile - OMT Terrain</title>
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+    <script src='https://unpkg.com/maplibre-gl@latest/dist/maplibre-gl.js'></script>
+    <link href='https://unpkg.com/maplibre-gl@latest/dist/maplibre-gl.css' rel='stylesheet' />
+    <style>
+        body { margin:0; padding:0; }
+        #map { position:absolute; top:0; bottom:0; width:100%; }
+    </style>
+</head>
+<body>
+
+<div id='map'></div>
+<script>
+var map = window.map = new maplibregl.Map({
+    container: 'map',
+    zoom: 12,
+    center: [11.39085, 47.27574],
+    pitch: 52,
+    hash: true,
+    style: 'https://demotiles.maplibre.org/styles/osm-bright-gl-terrain/style.json',
+    maxZoom: 18,
+    maxPitch: 85
+});
+
+map.addControl(new maplibregl.NavigationControl({
+    	visualizePitch: true,
+    	showZoom: true,
+    	showCompass: true
+}));
+
+map.addControl(
+	new maplibregl.TerrainControl({
+		source: 'TerrainSource',
+		exaggeration: 1
+	})
+);
+
+</script>
+
+</body>
+</html>

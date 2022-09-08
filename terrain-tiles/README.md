@@ -10,13 +10,11 @@ Contains terrain tiles in the N047E011 region. These tiles are made to be used w
 
     terrain_source: {
     	type: 'raster-dem',
-    	url: 'https://demotiles.maplibre.org/terrain-tiles/tiles.json',
-    	tileSize: 256
+    	url: 'https://demotiles.maplibre.org/terrain-tiles/tiles.json'
     },
     hillshade_source: {
     	type: 'raster-dem',
-    	url: 'https://demotiles.maplibre.org/terrain-tiles/tiles.json',
-    	tileSize: 256
+    	url: 'https://demotiles.maplibre.org/terrain-tiles/tiles.json'
     },
 
 2.) Use the terrain tile source for 3d terrain in you style.
@@ -51,13 +49,11 @@ Contains terrain tiles in the N047E011 region. These tiles are made to be used w
 			},
     		terrain_source: {
 				type:  'raster-dem',
-				url:  'https://demotiles.maplibre.org/terrain-tiles/tiles.json',
-				tileSize:  256
+				url:  'https://demotiles.maplibre.org/terrain-tiles/tiles.json'
 			},
     		hillshade_source: {
 				type:  'raster-dem',
-				url:  'https://demotiles.maplibre.org/terrain-tiles/tiles.json',
-				tileSize:  256
+				url:  'https://demotiles.maplibre.org/terrain-tiles/tiles.json'
 			},
     	},
     	layers: [
