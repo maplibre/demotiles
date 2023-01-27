@@ -12,7 +12,7 @@ See the live preview at https://demotiles.maplibre.org. You can also access the 
 
 the MapLibre World demo was kindly provided by the [MapTiler](https://www.maptiler.com/) team ([@klokan](https://github.com/klokan), [@nbozon](https://github.com/nbozon), [@petr-pokorny-1](https://github.com/petr-pokorny-1), [@tomasklanica](https://github.com/tomasklanica)). 
 
-the [terrain-tiles](terrain-tiles) and [tiles-omt](tiles-omt) demos were added by [@acalcutt](https://github.com/acalcutt) with styles based on [OSM Bright](https://github.com/openmaptiles/osm-bright-gl-style)
+the [Terrain](terrain-tiles) and [OpenMapTiles](tiles-omt) demos were provided by [@acalcutt](https://github.com/acalcutt) with styles based on [OSM Bright](https://github.com/openmaptiles/osm-bright-gl-style)
 
 The font PBFs were generated using the scripts and source fonts from https://github.com/openmaptiles/fonts.
 
