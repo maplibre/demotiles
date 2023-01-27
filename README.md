@@ -1,6 +1,6 @@
 ## Demo
 
-See the live preview at https://demotiles.maplibre.org. You can also access the style as JSON for testing in mobile or other style tools.
+See the Live Demos at the following links. You can also use the styles as JSON for testing in mobile or other style tools.
 
 | Style | Live Demo | `style.json`
 | :--- | :--- | :---
