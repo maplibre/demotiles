@@ -1,16 +1,27 @@
 # MapLibre sample world map - demotiles
 
-This is the sample vector map displayed on the frontpage of www.maplibre.org - used in the helloworld examples and CI tests of @MapLibre organization.
+This is the sample vector map displayed on the frontpage of https://maplibre.org - used in the helloworld examples and CI tests of @MapLibre organization.
 
 It demonstrates the usage of simple vector tiles with the *MapLibre World* map style.
 
 Hosted as static files directly on GitHub Pages, serverless, no keys, runs offline as well.
 
+## Demo
 
-Live preview https://demotiles.maplibre.org/
+See the live preview at https://demotiles.maplibre.org.  You can also access the style as JSON for testing in mobile or other style tools.
+
+| Style | Live Demo | `style.json`
+| :--- | :--- | :---
+| MapLibre Demo | https://demotiles.maplibre.org | https://demotiles.maplibre.org/style.json
+| OSM Bright | https://demotiles.maplibre.org/tiles-omt | https://demotiles.maplibre.org/styles/osm-bright-gl-style/style.json
+| Terrain,</br>centered around Innsbruck, Austria | https://demotiles.maplibre.org/terrain-tiles | https://demotiles.maplibre.org/styles/osm-bright-gl-terrain/style.json
+
+### Tiles
 
 The MBTiles can be downloaded in the [releases](https://github.com/maplibre/demotiles/releases).
 For offline use you can download the [.zip](https://github.com/maplibre/demotiles/archive/refs/heads/gh-pages.zip) including the font and viewer.
+
+### Contributors
 
 Kindly provided by [MapTiler](https://www.maptiler.com/) team (@klokan, @nbozon, @petr-pokorny-1, @tomasklanica).
 
