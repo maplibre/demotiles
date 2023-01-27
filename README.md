@@ -12,8 +12,8 @@ See the live preview at https://demotiles.maplibre.org.  You can also access the
 
 | Style | Live Demo | `style.json`
 | :--- | :--- | :---
-| [MapLibre World](README.md) | https://demotiles.maplibre.org | https://demotiles.maplibre.org/style.json
-| [OpenMapTiles](tiles-omt) | https://demotiles.maplibre.org/tiles-omt | https://demotiles.maplibre.org/styles/osm-bright-gl-style/style.json
+| [MapLibre World]() | https://demotiles.maplibre.org | https://demotiles.maplibre.org/style.json
+| [OpenMapTiles](tiles-omt),</br>centered around Innsbruck, Austria | https://demotiles.maplibre.org/tiles-omt | https://demotiles.maplibre.org/styles/osm-bright-gl-style/style.json
 | [Terrain](terrain-tiles),</br>centered around Innsbruck, Austria | https://demotiles.maplibre.org/terrain-tiles | https://demotiles.maplibre.org/styles/osm-bright-gl-terrain/style.json
 
 ### Tiles
