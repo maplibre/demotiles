@@ -4,7 +4,7 @@ See the live preview at https://demotiles.maplibre.org. You can also access the 
 
 | Style | Live Demo | `style.json`
 | :--- | :--- | :---
-| [MapLibre World](#maplibre-world-sample-map---demotiles) | https://demotiles.maplibre.org | https://demotiles.maplibre.org/style.json
+| [MapLibre World](#maplibre-world-demo-map) | https://demotiles.maplibre.org | https://demotiles.maplibre.org/style.json
 | [OpenMapTiles](tiles-omt),</br>centered around Innsbruck, Austria | https://demotiles.maplibre.org/tiles-omt | https://demotiles.maplibre.org/styles/osm-bright-gl-style/style.json
 | [Terrain](terrain-tiles),</br>centered around Innsbruck, Austria | https://demotiles.maplibre.org/terrain-tiles | https://demotiles.maplibre.org/styles/osm-bright-gl-terrain/style.json
 
@@ -16,7 +16,7 @@ the [Terrain](terrain-tiles) and [OpenMapTiles](tiles-omt) demos were provided b
 
 The font PBFs were generated using the scripts and source fonts from https://github.com/openmaptiles/fonts.
 
-# MapLibre World sample map - demotiles
+# MapLibre World demo map
 
 This is the sample vector map displayed on the frontpage of https://maplibre.org - used in the helloworld examples and CI tests of @MapLibre organization.
 
