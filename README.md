@@ -12,8 +12,8 @@ See the live preview at https://demotiles.maplibre.org.  You can also access the
 
 | Style | Live Demo | `style.json`
 | :--- | :--- | :---
-| MapLibre Demo | https://demotiles.maplibre.org | https://demotiles.maplibre.org/style.json
-| [OSM Bright](tiles-omt) | https://demotiles.maplibre.org/tiles-omt | https://demotiles.maplibre.org/styles/osm-bright-gl-style/style.json
+| [MapLibre World](README.md) | https://demotiles.maplibre.org | https://demotiles.maplibre.org/style.json
+| [OpenMapTiles](tiles-omt) | https://demotiles.maplibre.org/tiles-omt | https://demotiles.maplibre.org/styles/osm-bright-gl-style/style.json
 | [Terrain](terrain-tiles),</br>centered around Innsbruck, Austria | https://demotiles.maplibre.org/terrain-tiles | https://demotiles.maplibre.org/styles/osm-bright-gl-terrain/style.json
 
 ### Tiles
@@ -23,11 +23,11 @@ For offline use you can download the [.zip](https://github.com/maplibre/demotile
 
 ### Contributors
 
-Kindly provided by [MapTiler](https://www.maptiler.com/) team ([@klokan](https://github.com/klokan), [@nbozon](https://github.com/nbozon), [@petr-pokorny-1](https://github.com/petr-pokorny-1), [@tomasklanica](https://github.com/tomasklanica)).  The styles & tiles for [terrain-tiles](terrain-tiles) and [tiles-omt](tiles-omt) for were added by [@acalcutt](https://github.com/acalcutt).
+the MapLibre World demo was kindly provided by the [MapTiler](https://www.maptiler.com/) team ([@klokan](https://github.com/klokan), [@nbozon](https://github.com/nbozon), [@petr-pokorny-1](https://github.com/petr-pokorny-1), [@tomasklanica](https://github.com/tomasklanica)). 
 
-The Open Sans Regular font PBFs were generated using the script and source fonts from https://github.com/openmaptiles/fonts.
+the [terrain-tiles](terrain-tiles) and [tiles-omt](tiles-omt) demos were added by [@acalcutt](https://github.com/acalcutt) with styles based on [OSM Bright](https://github.com/openmaptiles/osm-bright-gl-style)
 
-
+The font PBFs were generated using the scripts and source fonts from https://github.com/openmaptiles/fonts.
 
 ![maplibre-world-map-style](https://user-images.githubusercontent.com/59284/118267966-117aa100-b4bd-11eb-8824-430cbe674191.png)
 
