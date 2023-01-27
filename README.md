@@ -1,11 +1,3 @@
-# MapLibre sample world map - demotiles
-
-This is the sample vector map displayed on the frontpage of https://maplibre.org - used in the helloworld examples and CI tests of @MapLibre organization.
-
-It demonstrates the usage of simple vector tiles with the *MapLibre World* map style.
-
-Hosted as static files directly on GitHub Pages, serverless, no keys, runs offline as well.
-
 ## Demo
 
 See the live preview at https://demotiles.maplibre.org.  You can also access the style as JSON for testing in mobile or other style tools.
@@ -28,6 +20,14 @@ the MapLibre World demo was kindly provided by the [MapTiler](https://www.maptil
 the [terrain-tiles](terrain-tiles) and [tiles-omt](tiles-omt) demos were added by [@acalcutt](https://github.com/acalcutt) with styles based on [OSM Bright](https://github.com/openmaptiles/osm-bright-gl-style)
 
 The font PBFs were generated using the scripts and source fonts from https://github.com/openmaptiles/fonts.
+
+# MapLibre sample world map - demotiles
+
+This is the sample vector map displayed on the frontpage of https://maplibre.org - used in the helloworld examples and CI tests of @MapLibre organization.
+
+It demonstrates the usage of simple vector tiles with the *MapLibre World* map style.
+
+Hosted as static files directly on GitHub Pages, serverless, no keys, runs offline as well.
 
 ![maplibre-world-map-style](https://user-images.githubusercontent.com/59284/118267966-117aa100-b4bd-11eb-8824-430cbe674191.png)
 
