@@ -1,4 +1,4 @@
-## MapLibre Demo Tiles
+# MapLibre Demo Tiles
 
 You can see the live demos at the following links. You can also access the styles as JSON for testing in mobile or other style tools.
 
@@ -8,7 +8,7 @@ You can see the live demos at the following links. You can also access the style
 | [OpenMapTiles](tiles-omt),</br>centered around Innsbruck, Austria | https://demotiles.maplibre.org/tiles-omt | https://demotiles.maplibre.org/styles/osm-bright-gl-style/style.json
 | [Terrain](terrain-tiles),</br>centered around Innsbruck, Austria | https://demotiles.maplibre.org/terrain-tiles | https://demotiles.maplibre.org/styles/osm-bright-gl-terrain/style.json
 
-# MapLibre World demo map
+## MapLibre World demo map
 
 This is the sample vector map displayed on the frontpage of https://maplibre.org - used in the helloworld examples and CI tests of @MapLibre organization.
 
