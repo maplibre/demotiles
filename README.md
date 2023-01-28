@@ -1,4 +1,14 @@
-# MapLibre sample world map - demotiles
+# MapLibre Demo Tiles
+
+You can see the live demos at the following links. You can also access the styles as JSON for testing in mobile or other style tools.
+
+| Style | Live Demo | `style.json`
+| :--- | :--- | :---
+| [MapLibre World](#maplibre-world-demo-map) | https://demotiles.maplibre.org | https://demotiles.maplibre.org/style.json
+| [OpenMapTiles](tiles-omt),</br>centered around Innsbruck, Austria | https://demotiles.maplibre.org/tiles-omt | https://demotiles.maplibre.org/styles/osm-bright-gl-style/style.json
+| [Terrain](terrain-tiles),</br>centered around Innsbruck, Austria | https://demotiles.maplibre.org/terrain-tiles | https://demotiles.maplibre.org/styles/osm-bright-gl-terrain/style.json
+
+## MapLibre World demo map
 
 This is the sample vector map displayed on the frontpage of https://maplibre.org - used in the helloworld examples and CI tests of @MapLibre organization.
 
@@ -6,28 +16,8 @@ It demonstrates the usage of simple vector tiles with the *MapLibre World* map s
 
 Hosted as static files directly on GitHub Pages, serverless, no keys, runs offline as well.
 
-## Demo
-
-See the live preview at https://demotiles.maplibre.org.  You can also access the style as JSON for testing in mobile or other style tools.
-
-| Style | Live Demo | `style.json`
-| :--- | :--- | :---
-| MapLibre Demo | https://demotiles.maplibre.org | https://demotiles.maplibre.org/style.json
-| [OSM Bright](tiles-omt) | https://demotiles.maplibre.org/tiles-omt | https://demotiles.maplibre.org/styles/osm-bright-gl-style/style.json
-| [Terrain](terrain-tiles),</br>centered around Innsbruck, Austria | https://demotiles.maplibre.org/terrain-tiles | https://demotiles.maplibre.org/styles/osm-bright-gl-terrain/style.json
-
-### Tiles
-
 The MBTiles can be downloaded in the [releases](https://github.com/maplibre/demotiles/releases).
 For offline use you can download the [.zip](https://github.com/maplibre/demotiles/archive/refs/heads/gh-pages.zip) including the font and viewer.
-
-### Contributors
-
-Kindly provided by [MapTiler](https://www.maptiler.com/) team ([@klokan](https://github.com/klokan), [@nbozon](https://github.com/nbozon), [@petr-pokorny-1](https://github.com/petr-pokorny-1), [@tomasklanica](https://github.com/tomasklanica)).  The styles & tiles for [terrain-tiles](terrain-tiles) and [tiles-omt](tiles-omt) for were added by [@acalcutt](https://github.com/acalcutt).
-
-The Open Sans Regular font PBFs were generated using the script and source fonts from https://github.com/openmaptiles/fonts.
-
-
 
 ![maplibre-world-map-style](https://user-images.githubusercontent.com/59284/118267966-117aa100-b4bd-11eb-8824-430cbe674191.png)
 
@@ -63,3 +53,11 @@ Design is heavily inspired by the the Geography Class map style from [klokantech
 ```
 
 The map labels are using the Open Sans SemiBold font.
+
+## Contributors
+
+the [MapLibre World](#maplibre-world-demo-map) demo was kindly provided by the [MapTiler](https://www.maptiler.com/) team ([@klokan](https://github.com/klokan), [@nbozon](https://github.com/nbozon), [@petr-pokorny-1](https://github.com/petr-pokorny-1), [@tomasklanica](https://github.com/tomasklanica)). 
+
+the [Terrain](terrain-tiles) and [OpenMapTiles](tiles-omt) demos were provided by [@acalcutt](https://github.com/acalcutt) with styles based on [OSM Bright](https://github.com/openmaptiles/osm-bright-gl-style)
+
+The font PBFs were generated using the scripts and source fonts from https://github.com/openmaptiles/fonts.
