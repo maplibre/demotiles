@@ -4,7 +4,7 @@
    "sources":{
       "openmaptiles":{
          "type":"vector",
-         "url":"https://salkin975.github.io/demotiles/tiles-mlt/plain/tiles.json"
+         "url":"https://salkin975.github.io/demotiles-mlt/tiles-mlt/plain/tiles.json"
       }
    },
    "sprite":"https://demotiles.maplibre.org/styles/osm-bright-gl-style/sprite",
