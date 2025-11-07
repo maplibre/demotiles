@@ -38,14 +38,16 @@
       "openmaptiles:mapbox:owner":"openmaptiles",
       "openmaptiles:mapbox:source:url":"mapbox://openmaptiles.4qljc88t"
    },
-   "sources":{
-      "openmaptiles":{
-         "type":"vector",
-         "url":"https://salkin975.github.io/demotiles-mlt/tiles-mlt/plain/tiles.json"
-      }
-   },
-   "sprite":"https://demotiles.maplibre.org/styles/osm-bright-gl-style/sprite",
-   "glyphs":"https://demotiles.maplibre.org/font/{fontstack}/{range}.pbf",
+      "sources": {
+    "openmaptiles": {
+      "type": "vector",
+      "encoding": "mlt",
+      "tiles": ["https://salkin975.github.io/demotiles-mlt/tiles-mlt/plain/{z}/{x}/{y}.mlt"],
+      "maxzoom": 6
+    }
+  },
+  "sprite": "https://openmaptiles.github.io/maptiler-basic-gl-style/sprite",
+  "glyphs": "https://maps.nsrv.dev/mlt/styles/fonts/{fontstack}/{range}.pbf",
    "layers":[
       {
          "id":"background",
