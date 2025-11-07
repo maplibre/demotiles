@@ -11,19 +11,8 @@
    "attribution":"<a href=\"https://www.openmaptiles.org/\" target=\"_blank\">&copy; OpenMapTiles</a> <a href=\"https://www.openstreetmap.org/copyright\" target=\"_blank\">&copy; OpenStreetMap contributors</a>",
    "version":"3.13.1",
    "type":"baselayer",
-   "bounds":[
-      11,
-      47,
-      12,
-      48
-   ],
-   "center":[
-      11.5,
-      47.5,
-      8
-   ],
    "minzoom":0,
-   "maxzoom":14,
+   "maxzoom":6,
    "vector_layers":[
       {
          "id":"aerodrome_label",
