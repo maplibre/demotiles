@@ -68,6 +68,6 @@
         1
     ],
     "tiles": [
-        "https://demotiles.maplibre.org/tiles-mlt/plain/{z}/{x}/{y}.mlt"
+        "https://harelm.github.io/demotiles/tiles-mlt/plain/{z}/{x}/{y}.mlt"
     ]
 }
