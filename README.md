@@ -8,6 +8,8 @@ You can see the live demos at the following links. You can also access the style
 | [OpenMapTiles](tiles-omt),</br>centered around Innsbruck, Austria | https://demotiles.maplibre.org/tiles-omt | https://demotiles.maplibre.org/styles/osm-bright-gl-style/style.json
 | [Terrain](terrain-tiles),</br>centered around Innsbruck, Austria | https://demotiles.maplibre.org/terrain-tiles | https://demotiles.maplibre.org/styles/osm-bright-gl-terrain/style.json
 | [Debug](debug-tiles),</br>demonstrating tile zoom variation | https://demotiles.maplibre.org/debug-tiles | https://demotiles.maplibre.org/debug-tiles/style.json
+| [PMTiles Vector World](#pmtiles) | https://demotiles.maplibre.org/pmtiles.html | https://demotiles.maplibre.org/pmtiles/vector/style.json
+| [PMTiles Terrain — Austrian Alps](#pmtiles) | https://demotiles.maplibre.org/terrain.html | https://demotiles.maplibre.org/terrain-tiles/style.json
 
 ## MapLibre World demo map
 
@@ -65,7 +67,21 @@ The [number-hillshade](debug-tiles/number-hillshade) tiles render the zoom level
 
 The [terrain-ruffles](debug-tiles/terrain-ruffles) tiles contain a ruffle around the border, which helps visualize bouundaries between loaded raster tiles.
 
+## PMTiles
+
+The [pmtiles/](pmtiles/) directory contains two PMTiles archives. You can reference these directly without a tile server from a stylesheet or via `addSource`.
+
+### Vector: MapLibre World
+
+[pmtiles/vector/world.pmtiles](pmtiles/vector/world.pmtiles) — the MapLibre World tileset as described above (countries, geolines, centroids) packaged as a single PMTiles archive (z0-6, ~3.6MB).
+
+### Raster: Mapterhorn Terrain — Austrian Alps
+
+[pmtiles/raster/mapterhorn.pmtiles](pmtiles/raster/mapterhorn.pmtiles) — a regional terrain extract centered on Innsbruck, Austria (9°E–15°E, 46°N–49°N), extracted from the global [Mapterhorn](https://mapterhorn.com) dataset (Terrarium-encoded WebP, 512px tiles, z0-9, ~54MB).
+
 ## Contributors
+
+the Mapterhorn Terrain PMTiles data is derived from ESA Copernicus DEM and distributed by [Mapterhorn](https://mapterhorn.com/).
 
 the [MapLibre World](#maplibre-world-demo-map) demo was kindly provided by the [MapTiler](https://www.maptiler.com/) team ([@klokan](https://github.com/klokan), [@nbozon](https://github.com/nbozon), [@petr-pokorny-1](https://github.com/petr-pokorny-1), [@tomasklanica](https://github.com/tomasklanica)). 
 
