@@ -7,14 +7,7 @@
             "type": "background",
             "paint": {
                 "background-color": "#D8F2FF"
-            },
-            "filter": [
-                "all"
-            ],
-            "layout": {
-                "visibility": "visible"
-            },
-            "maxzoom": 24
+            }
         },
         {
             "id": "coastline",
@@ -31,17 +24,12 @@
                     ]
                 }
             },
-            "filter": [
-                "all"
-            ],
             "layout": {
                 "line-cap": "round",
                 "line-join": "round",
                 "visibility": "visible"
             },
             "source": "maplibre",
-            "maxzoom": 24,
-            "minzoom": 0,
             "source-layer": "countries"
         },
         {
@@ -70,12 +58,7 @@
                     "#EAB38F"
                 ]
             },
-            "filter": ["all"],
-            "layout": {
-                "visibility": "visible"
-            },
             "source": "maplibre",
-            "maxzoom": 24,
             "source-layer": "countries"
         },
         {
@@ -104,7 +87,6 @@
                 "visibility": "visible"
             },
             "source": "maplibre",
-            "maxzoom": 24,
             "source-layer": "countries"
         },
         {
@@ -119,11 +101,7 @@
                 "all",
                 ["!=", "name", "International Date Line"]
             ],
-            "layout": {
-                "visibility": "visible"
-            },
             "source": "maplibre",
-            "maxzoom": 24,
             "source-layer": "geolines"
         },
         {
@@ -148,12 +126,9 @@
                     ]
                 },
                 "text-field": "{name}",
-                "visibility": "visible",
                 "symbol-placement": "line"
             },
             "source": "maplibre",
-            "maxzoom": 24,
-            "minzoom": 1,
             "source-layer": "geolines"
         },
         {
@@ -175,7 +150,6 @@
                     ]
                 }
             },
-            "filter": ["all"],
             "layout": {
                 "text-font": ["Open Sans Semibold"],
                 "text-size": {
@@ -201,8 +175,6 @@
                 }
             },
             "source": "maplibre",
-            "maxzoom": 24,
-            "minzoom": 2,
             "source-layer": "centroids"
         },
         {
