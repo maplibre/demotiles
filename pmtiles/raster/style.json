@@ -1,0 +1,45 @@
+{
+    "name": "Demo MapLibre Terrain PMTiles — Austrian Alps",
+    "version": 8,
+    "center": [11.39085, 47.27574],
+    "zoom": 10,
+    "maxzoom": 9,
+    "sources": {
+        "mapterhorn": {
+            "type": "raster-dem",
+            "url": "pmtiles:///pmtiles/raster/mapterhorn.pmtiles",
+            "encoding": "terrarium",
+            "tileSize": 512,
+            "minzoom": 0,
+            "maxzoom": 9,
+            "attribution": "<a href=\"https://mapterhorn.com/attribution\">&copy; Mapterhorn</a>"
+        },
+        "mapterhorn-hillshade": {
+            "type": "raster-dem",
+            "url": "pmtiles:///pmtiles/raster/mapterhorn.pmtiles",
+            "encoding": "terrarium",
+            "tileSize": 512,
+            "minzoom": 0,
+            "maxzoom": 9
+        }
+    },
+    "terrain": {
+        "source": "mapterhorn",
+        "exaggeration": 1
+    },
+    "layers": [
+        {
+            "id": "hillshade",
+            "type": "hillshade",
+            "source": "mapterhorn-hillshade",
+            "paint": {
+                "hillshade-illumination-direction": 315,
+                "hillshade-illumination-anchor": "map",
+                "hillshade-exaggeration": 0.5,
+                "hillshade-shadow-color": "#473B24",
+                "hillshade-highlight-color": "#ffffff",
+                "hillshade-accent-color": "#000000"
+            }
+        }
+    ]
+}
