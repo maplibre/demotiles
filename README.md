@@ -9,7 +9,7 @@ You can see the live demos at the following links. You can also access the style
 | [Terrain](terrain-tiles),</br>centered around Innsbruck, Austria | https://demotiles.maplibre.org/terrain-tiles | https://demotiles.maplibre.org/styles/osm-bright-gl-terrain/style.json
 | [Debug](debug-tiles),</br>demonstrating tile zoom variation | https://demotiles.maplibre.org/debug-tiles | https://demotiles.maplibre.org/debug-tiles/style.json
 | [PMTiles Vector World](#pmtiles) | https://demotiles.maplibre.org/pmtiles.html | https://demotiles.maplibre.org/pmtiles/vector/style.json
-| [PMTiles Terrain — Austrian Alps](#pmtiles) | https://demotiles.maplibre.org/terrain.html | https://demotiles.maplibre.org/terrain-tiles/style.json
+| [PMTiles Terrain — Austrian Alps](#pmtiles) | https://demotiles.maplibre.org/terrain.html | https://demotiles.maplibre.org/pmtiles/raster/style.json
 
 ## MapLibre World demo map
 

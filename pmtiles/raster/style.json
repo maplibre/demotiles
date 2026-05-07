@@ -1,8 +1,8 @@
 {
     "name": "Demo MapLibre Terrain PMTiles — Austrian Alps",
     "version": 8,
-    "center": [11.39085, 47.27574],
-    "zoom": 10,
+    "center": [11.391, 47.276],
+    "zoom": 5,
     "maxzoom": 9,
     "sources": {
         "mapterhorn": {
@@ -10,17 +10,13 @@
             "url": "pmtiles:///pmtiles/raster/mapterhorn.pmtiles",
             "encoding": "terrarium",
             "tileSize": 512,
-            "minzoom": 0,
-            "maxzoom": 9,
             "attribution": "<a href=\"https://mapterhorn.com/attribution\">&copy; Mapterhorn</a>"
         },
         "mapterhorn-hillshade": {
             "type": "raster-dem",
             "url": "pmtiles:///pmtiles/raster/mapterhorn.pmtiles",
             "encoding": "terrarium",
-            "tileSize": 512,
-            "minzoom": 0,
-            "maxzoom": 9
+            "tileSize": 512
         }
     },
     "terrain": {
