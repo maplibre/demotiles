@@ -69,7 +69,9 @@ The [terrain-ruffles](debug-tiles/terrain-ruffles) tiles contain a ruffle around
 
 ## PMTiles
 
-The [pmtiles/](pmtiles/) directory contains two PMTiles archives. You can reference these directly without a tile server from a stylesheet or via `addSource`.
+The [pmtiles/](pmtiles/) directory contains two PMTiles archives. You can reference these directly without a tile server using the `pmtiles://` URL scheme in a source definition. For example: `pmtiles://https://demotiles.maplibre.org/pmtiles/vector/world.pmtiles`.
+
+See the [Protomaps MapLibre docs](https://docs.protomaps.com/pmtiles/maplibre) for GL JS setup (note: MapLibre Native has built-in PMTiles support and does not require the JS protocol plugin).
 
 ### Vector: MapLibre World
 
