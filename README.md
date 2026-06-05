@@ -8,8 +8,9 @@ You can see the live demos at the following links. You can also access the style
 | [OpenMapTiles](tiles-omt),</br>centered around Innsbruck, Austria | https://demotiles.maplibre.org/tiles-omt | https://demotiles.maplibre.org/styles/osm-bright-gl-style/style.json
 | [Terrain](terrain-tiles),</br>centered around Innsbruck, Austria | https://demotiles.maplibre.org/terrain-tiles | https://demotiles.maplibre.org/styles/osm-bright-gl-terrain/style.json
 | [Debug](debug-tiles),</br>demonstrating tile zoom variation | https://demotiles.maplibre.org/debug-tiles | https://demotiles.maplibre.org/debug-tiles/style.json
-| [PMTiles Vector World](#pmtiles) | https://demotiles.maplibre.org/pmtiles.html | https://demotiles.maplibre.org/pmtiles/vector/style.json
-| [PMTiles Terrain — Austrian Alps](#pmtiles) | https://demotiles.maplibre.org/terrain.html | https://demotiles.maplibre.org/pmtiles/raster/style.json
+| [PMTiles Vector World](#vector-maplibre-world) | https://demotiles.maplibre.org/pmtiles/vector/ | https://demotiles.maplibre.org/pmtiles/vector/style.json
+| [PMTiles Raster (imagery)](#raster-innsbruck-austria),</br>centered around Innsbruck, Austria | https://demotiles.maplibre.org/pmtiles/raster/imagery.html | https://demotiles.maplibre.org/pmtiles/raster/style-imagery.json
+| [PMTiles Raster (watercolor)](#raster-innsbruck-austria),</br>centered around Innsbruck, Austria | https://demotiles.maplibre.org/pmtiles/raster/watercolor.html | https://demotiles.maplibre.org/pmtiles/raster/style-watercolor.json
 
 ## MapLibre World demo map
 
@@ -69,21 +70,48 @@ The [terrain-ruffles](debug-tiles/terrain-ruffles) tiles contain a ruffle around
 
 ## PMTiles
 
-The [pmtiles/](pmtiles/) directory contains two PMTiles archives. You can reference these directly without a tile server using the `pmtiles://` URL scheme in a source definition. For example: `pmtiles://https://demotiles.maplibre.org/pmtiles/vector/world.pmtiles`.
+The [pmtiles/](pmtiles/) directory contains PMTiles archives you can reference directly or download for your own testing. Archives are split into `/vector` and `/raster` folders because each archive holds a single tile type.
 
-See the [Protomaps MapLibre docs](https://docs.protomaps.com/pmtiles/maplibre) for GL JS setup (note: MapLibre Native has built-in PMTiles support and does not require the JS protocol plugin).
+Please note: MapLibre style spec treats the two raster source types differently depending on the layer: [`raster-dem`](https://maplibre.org/maplibre-style-spec/sources/#raster-dem) decodes pixel values as terrain elevation (hillshade, 3D terrain), while [`raster`](https://maplibre.org/maplibre-style-spec/sources/#raster) renders the raw pixels directly.
+
+See the [Protomaps MapLibre docs](https://docs.protomaps.com/pmtiles/maplibre) for GL JS setup (MapLibre Native has built-in PMTiles support and does not require the JS protocol plugin).
 
 ### Vector: MapLibre World
 
-[pmtiles/vector/world.pmtiles](pmtiles/vector/world.pmtiles) — the MapLibre World tileset as described above (countries, geolines, centroids) packaged as a single PMTiles archive (z0-6, ~3.6MB).
+[pmtiles/vector/world.pmtiles](pmtiles/vector/world.pmtiles): the MapLibre World tileset described above (countries, geolines, centroids) as a single PMTiles archive (z0–6, ~3.6 MB).
 
-### Raster: Mapterhorn Terrain — Austrian Alps
+![vector PMTiles demo](pmtiles/vector/vector-pmtiles.png)
 
-[pmtiles/raster/mapterhorn.pmtiles](pmtiles/raster/mapterhorn.pmtiles) — a regional terrain extract centered on Innsbruck, Austria (9°E–15°E, 46°N–49°N), extracted from the global [Mapterhorn](https://mapterhorn.com) dataset (Terrarium-encoded WebP, 512px tiles, z0-9, ~54MB).
+### Raster: Innsbruck, Austria
+
+Three composable archives centered on Innsbruck, Austria (9°E–15°E, 46°N–49°N): a Sentinel-2 or watercolor base `raster`, plus a Mapterhorn `raster-dem` hillshade. To demonstrate common usage, the two preview styles linked below composite the `raster` with the `raster-dem` and overlay with an OpenMapTiles vector overlay (borders, labels, peaks) from the OpenStreetMap US Tile Service.
+
+| Hillshade (terrain DEM) | Sentinel-2 imagery + hillshade | Watercolor + hillshade
+| :--- | :--- | :---
+| ![hillshade from raster-dem PMTiles](pmtiles/raster/raster-dem-hillshade.png) | ![Sentinel-2 imagery with hillshade](pmtiles/raster/raster-dem+imagery.png) | ![watercolor with hillshade](pmtiles/raster/raster-dem+map.png)
+
+| Archive | Type | Source | Zoom | Size
+| :--- | :--- | :--- | :--- | :---
+| [imagery.pmtiles](pmtiles/raster/imagery.pmtiles) | `raster` (JPEG, 256px) | EOX Sentinel-2 cloudless 2023 | z0–10 | ~24.7 MB
+| [watercolor.pmtiles](pmtiles/raster/watercolor.pmtiles) | `raster` (JPEG, 256px) | Stamen watercolor (Cooper Hewitt) | z0–11 | ~18.6 MB
+| [terrain.pmtiles](pmtiles/raster/terrain.pmtiles) | `raster-dem` (Terrarium WebP, 512px) | Mapterhorn | z0–8 | ~21 MB
+
+Previews: [imagery.html](pmtiles/raster/imagery.html) · [watercolor.html](pmtiles/raster/watercolor.html). Styles: [style-imagery.json](pmtiles/raster/style-imagery.json) · [style-watercolor.json](pmtiles/raster/style-watercolor.json).
+
+**Coverage:** all three are tight to the core box `[9,46,15,49]`, except the watercolor archive, whose low zooms (z0–7) span a wider `[0,41,23,56]`; panning past z7 outside the core box can show overzoomed tiles.
+
+### Licensing
+
+Please preserve the licenses for all source data, embedded in each archive's metadata and shown on-map:
+
+- **Imagery:** [Sentinel-2 cloudless 2023](https://s2maps.eu) © [EOX](https://eox.at), [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) (modified Copernicus Sentinel data 2023; non-commercial).
+- **Watercolor:** [Stamen Design](https://stamen.com) tiles archived by [Cooper Hewitt](https://watercolormaps.collection.cooperhewitt.org), [CC BY 3.0](https://creativecommons.org/licenses/by/3.0/); map data © [OpenStreetMap](https://www.openstreetmap.org/copyright) contributors ([ODbL](https://opendatacommons.org/licenses/odbl/)).
+- **Terrain:** © [Mapterhorn](https://mapterhorn.com/attribution), from ESA Copernicus DEM.
+- **Vector overlay:** © [OpenStreetMap](https://www.openstreetmap.org/copyright) contributors ([ODbL](https://opendatacommons.org/licenses/odbl/)) via the [OSM US Tile Service](https://tiles.openstreetmap.us/) (OpenMapTiles).
 
 ## Contributors
 
-the Mapterhorn Terrain PMTiles data is derived from ESA Copernicus DEM and distributed by [Mapterhorn](https://mapterhorn.com/).
+the [PMTiles Raster](#raster-innsbruck-austria) demos were kindly donated by [Stephanie May](https://github.com/mizmay), combining terrain from [Mapterhorn](https://mapterhorn.com/), [Sentinel-2 cloudless](https://s2maps.eu) imagery by [EOX](https://eox.at), [Stamen Design](https://stamen.com) watercolor archived by [Cooper Hewitt](https://watercolormaps.collection.cooperhewitt.org), and an OpenMapTiles overlay from the [OSM US Tile Service](https://tiles.openstreetmap.us/). See [Licensing](#licensing) for terms.
 
 the [MapLibre World](#maplibre-world-demo-map) demo was kindly provided by the [MapTiler](https://www.maptiler.com/) team ([@klokan](https://github.com/klokan), [@nbozon](https://github.com/nbozon), [@petr-pokorny-1](https://github.com/petr-pokorny-1), [@tomasklanica](https://github.com/tomasklanica)). 
 
