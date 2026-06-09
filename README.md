@@ -20,17 +20,12 @@ It demonstrates the usage of simple vector tiles with the *MapLibre World* map s
 
 Hosted as static files directly on GitHub Pages, serverless, no keys, runs offline as well.
 
+Country polygons are from [Natural Earth Data](https://www.naturalearthdata.com/).
+
 The MBTiles can be downloaded in the [releases](https://github.com/maplibre/demotiles/releases).
 For offline use you can download the [.zip](https://github.com/maplibre/demotiles/archive/refs/heads/gh-pages.zip) including the font and viewer.
 
 ![maplibre-world-map-style](https://user-images.githubusercontent.com/59284/118267966-117aa100-b4bd-11eb-8824-430cbe674191.png)
-
-## World countries vector tiles
-
-The map uses a lightweight vector tileset to color and label the world countries. Country polygons are from [Natural Earth Data](https://www.naturalearthdata.com/).
-The shapefiles were converted into vector tiles using the [MapTiler Desktop](https://www.maptiler.com/) software, which generates similar .pbf tile directory structure as present, as well as GeoPackage MVT or MBTiles file output.
-
-![maptiler-desktop-generate-vector-tiles](https://user-images.githubusercontent.com/59284/118269170-ac27af80-b4be-11eb-93c9-188c578b914e.gif)
 
 The resulting maplibre.mbtiles is available from this repo (pbf, z0-6, 4Mb).
 
@@ -68,11 +63,11 @@ The [number-hillshade](debug-tiles/number-hillshade) tiles render the zoom level
 
 The [terrain-ruffles](debug-tiles/terrain-ruffles) tiles contain a ruffle around the border, which helps visualize bouundaries between loaded raster tiles.
 
-## PMTiles
+## MapLibre PMTiles
 
 The [pmtiles/](pmtiles/) directory contains PMTiles archives you can reference directly or download for your own testing. Archives are split into `/vector` and `/raster` folders because each archive holds a single tile type.
 
-Please note: MapLibre style spec treats the two raster source types differently depending on the layer: [`raster-dem`](https://maplibre.org/maplibre-style-spec/sources/#raster-dem) decodes pixel values as terrain elevation (hillshade, 3D terrain), while [`raster`](https://maplibre.org/maplibre-style-spec/sources/#raster) renders the raw pixels directly.
+MapLibre style spec treats the two raster source types differently depending on the layer: [`raster-dem`](https://maplibre.org/maplibre-style-spec/sources/#raster-dem) decodes pixel values as terrain elevation (hillshade, 3D terrain), while [`raster`](https://maplibre.org/maplibre-style-spec/sources/#raster) renders the raw pixels directly.
 
 See the [Protomaps MapLibre docs](https://docs.protomaps.com/pmtiles/maplibre) for GL JS setup (MapLibre Native has built-in PMTiles support and does not require the JS protocol plugin).
 
@@ -100,6 +95,8 @@ Previews: [imagery.html](pmtiles/raster/imagery.html) · [watercolor.html](pmtil
 
 **Coverage:** all three are tight to the core box `[9,46,15,49]`, except the watercolor archive, whose low zooms (z0–7) span a wider `[0,41,23,56]`; panning past z7 outside the core box can show overzoomed tiles.
 
+[!NOTE] The `.pmtiles` files are served from a private R2 bucket via a Cloudflare Worker (`worker/`) rather than GitHub Pages directly; Cloudflare's CDN corrupts HTTP Range requests on GitHub Pages-hosted files, which breaks PMTiles fetching.
+
 ### Licensing
 
 Please preserve the licenses for all source data, embedded in each archive's metadata and shown on-map:
@@ -113,7 +110,7 @@ Please preserve the licenses for all source data, embedded in each archive's met
 
 the [PMTiles Raster](#raster-innsbruck-austria) demos were kindly donated by [Stephanie May](https://github.com/mizmay), combining terrain from [Mapterhorn](https://mapterhorn.com/), [Sentinel-2 cloudless](https://s2maps.eu) imagery by [EOX](https://eox.at), [Stamen Design](https://stamen.com) watercolor archived by [Cooper Hewitt](https://watercolormaps.collection.cooperhewitt.org), and an OpenMapTiles overlay from the [OSM US Tile Service](https://tiles.openstreetmap.us/). See [Licensing](#licensing) for terms.
 
-the [MapLibre World](#maplibre-world-demo-map) demo was kindly provided by the [MapTiler](https://www.maptiler.com/) team ([@klokan](https://github.com/klokan), [@nbozon](https://github.com/nbozon), [@petr-pokorny-1](https://github.com/petr-pokorny-1), [@tomasklanica](https://github.com/tomasklanica)). 
+the [MapLibre World](#maplibre-world-demo-map) demo was kindly provided by the [MapTiler](https://www.maptiler.com/) team ([@klokan](https://github.com/klokan), [@nbozon](https://github.com/nbozon), [@petr-pokorny-1](https://github.com/petr-pokorny-1), [@tomasklanica](https://github.com/tomasklanica)).
 
 the [Terrain](terrain-tiles) and [OpenMapTiles](tiles-omt) demos were provided by [@acalcutt](https://github.com/acalcutt) with styles based on [OSM Bright](https://github.com/openmaptiles/osm-bright-gl-style).
 
