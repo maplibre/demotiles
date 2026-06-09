@@ -106,6 +106,10 @@ Please preserve the licenses for all source data, embedded in each archive's met
 - **Terrain:** © [Mapterhorn](https://mapterhorn.com/attribution), from ESA Copernicus DEM.
 - **Vector overlay:** © [OpenStreetMap](https://www.openstreetmap.org/copyright) contributors ([ODbL](https://opendatacommons.org/licenses/odbl/)) via the [OSM US Tile Service](https://tiles.openstreetmap.us/) (OpenMapTiles).
 
+## Infrastructure
+
+The `.pmtiles` files are served from a private R2 bucket via the Cloudflare Worker in [`worker/`](worker/), which handles HTTP Range requests that Cloudflare's CDN would otherwise corrupt when serving from GitHub Pages.
+
 ## Contributors
 
 the [PMTiles Raster](#raster-innsbruck-austria) demos were kindly donated by [Stephanie May](https://github.com/mizmay), combining terrain from [Mapterhorn](https://mapterhorn.com/), [Sentinel-2 cloudless](https://s2maps.eu) imagery by [EOX](https://eox.at), [Stamen Design](https://stamen.com) watercolor archived by [Cooper Hewitt](https://watercolormaps.collection.cooperhewitt.org), and an OpenMapTiles overlay from the [OSM US Tile Service](https://tiles.openstreetmap.us/). See [Licensing](#licensing) for terms.
