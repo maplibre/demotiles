@@ -2,10 +2,10 @@ name = "demotiles-pmtiles"
 main = "src/index.js"
 compatibility_date = "2024-09-01"
 
-[[r2_buckets]]
-binding = "BUCKET"
-bucket_name = "demotiles-pmtiles"
-
 routes = [
   { pattern = "demotiles.maplibre.org/pmtiles/*", zone_name = "maplibre.org" }
 ]
+
+[[r2_buckets]]
+binding = "BUCKET"
+bucket_name = "demotiles-pmtiles"
