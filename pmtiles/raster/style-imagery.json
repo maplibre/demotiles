@@ -16,14 +16,14 @@
     },
     "terrain": {
       "type": "raster-dem",
-      "url": "pmtiles://terrain.pmtiles",
+      "url": "pmtiles://https://cdn.jsdelivr.net/gh/maplibre/demotiles@gh-pages/pmtiles/raster/terrain.pmtiles",
       "tileSize": 512,
       "encoding": "terrarium",
       "maxzoom": 8
     },
     "imagery": {
       "type": "raster",
-      "url": "pmtiles://imagery.pmtiles",
+      "url": "pmtiles://https://cdn.jsdelivr.net/gh/maplibre/demotiles@gh-pages/pmtiles/raster/imagery.pmtiles",
       "tileSize": 256,
       "maxzoom": 10,
       "attribution": "<a href='https://s2maps.eu'>Sentinel-2 cloudless 2023</a> by <a href='https://eox.at'>EOX</a> (modified Copernicus Sentinel data 2023; CC BY-NC-SA 4.0)"
