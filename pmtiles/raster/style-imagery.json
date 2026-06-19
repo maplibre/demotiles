@@ -14,13 +14,6 @@
       "url": "https://tiles.openstreetmap.us/vector/openmaptiles.json",
       "attribution": "&copy; <a href='https://www.openstreetmap.org/copyright'>OpenStreetMap</a> contributors | <a href='https://tiles.openstreetmap.us/'>OSM US TileService</a>"
     },
-    "terrain": {
-      "type": "raster-dem",
-      "url": "pmtiles://https://demotiles.maplibre.org/pmtiles/raster/terrain.pmtiles",
-      "tileSize": 512,
-      "encoding": "terrarium",
-      "maxzoom": 8
-    },
     "imagery": {
       "type": "raster",
       "url": "pmtiles://https://demotiles.maplibre.org/pmtiles/raster/imagery.pmtiles",
@@ -43,32 +36,6 @@
       "source": "imagery",
       "paint": {
         "raster-opacity": 0.9
-      }
-    },
-    {
-      "id": "terrain-hillshade",
-      "type": "hillshade",
-      "source": "terrain",
-      "paint": {
-        "hillshade-illumination-direction": 315,
-        "hillshade-illumination-anchor": "map",
-        "hillshade-exaggeration": 0.75,
-        "hillshade-shadow-color": "rgba(34,40,66,0.38)",
-        "hillshade-highlight-color": "rgba(255,240,214,0.35)",
-        "hillshade-accent-color": "rgba(12,14,30,0.45)"
-      }
-    },
-    {
-      "id": "terrain-hillshade-ne",
-      "type": "hillshade",
-      "source": "terrain",
-      "paint": {
-        "hillshade-illumination-direction": 45,
-        "hillshade-illumination-anchor": "map",
-        "hillshade-exaggeration": 0.35,
-        "hillshade-shadow-color": "rgba(54,64,96,0.28)",
-        "hillshade-highlight-color": "rgba(255,246,234,0.18)",
-        "hillshade-accent-color": "rgba(26,26,46,0.25)"
       }
     },
     {
