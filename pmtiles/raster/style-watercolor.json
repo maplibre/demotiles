@@ -16,7 +16,7 @@
     },
     "terrain": {
       "type": "raster-dem",
-      "url": "pmtiles://terrain.pmtiles",
+      "url": "pmtiles://https://demotiles.maplibre.org/pmtiles/raster/terrain.pmtiles",
       "tileSize": 512,
       "encoding": "terrarium",
       "maxzoom": 8,
@@ -24,7 +24,7 @@
     },
     "watercolor": {
       "type": "raster",
-      "url": "pmtiles://watercolor.pmtiles",
+      "url": "pmtiles://https://demotiles.maplibre.org/pmtiles/raster/watercolor.pmtiles",
       "tileSize": 256,
       "maxzoom": 11,
       "attribution": "Watercolor tiles by <a href='https://stamen.com'>Stamen Design</a>, archived by <a href='https://watercolormaps.collection.cooperhewitt.org'>Cooper Hewitt</a>, under <a href='https://creativecommons.org/licenses/by/3.0'>CC BY 3.0</a>."
