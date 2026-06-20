@@ -190,7 +190,7 @@
     "sources": {
         "maplibre": {
             "type": "vector",
-            "url": "pmtiles:///pmtiles/vector/world.pmtiles"
+            "url": "pmtiles://https://demotiles.maplibre.org/pmtiles/vector/world.pmtiles"
         },
         "crimea": {
             "type": "geojson",
